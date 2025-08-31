@@ -1,13 +1,12 @@
-import Header from "./components/Header";
-import ConverterForm from "./components/convertFrom";
+import ConverterForm from "./components/converterForm"
 
-function App() {
+ const App = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
-      <Header />
-      <converterFrom />
-    </div>
-  );
+    <div className="currency-converter">
+    <h2 className="converter-title">GlobeRate currency converter</h2>
+    <ConverterForm/>
+     </div>
+  )
 }
 
-export default App;
+export default App
