@@ -1,3 +1,121 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh;
+  background: #cfcbcb;
+}
+
+#root{
+  width: 100%;
+}
+
+.currency-converter{
+  margin: 0 auto;
+ background: #fff;
+ padding: 40px 30px 50px;
+ border-radius: 7px;
+ max-width: 400px;
+ border: 2px solid #000
+}
+
+.currency-converter .converter-title{
+  color: #000;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.currency-converter .converter-form{
+  margin-top: 40px;
+}
+
+.converter-form .form-group{
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: column;
+}
+
+.converter-form .form-group .form-lable{
+  color: #000;
+  font-weight: 500px;
+  display: block;
+  margin-bottom:10px ;
+  font-size: 18px;
+}
+
+.converter-form .form-group .form-input{
+  min-height: 48px;
+  border-radius: 7px;
+}
+.converter-form .form-currency-group{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.form-currency-group .currency-select{
+  display: flex;
+  padding:0 10px;
+  min-height: 45px;
+  align-items: center;
+  border-radius: 7px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.form-currency-group .currency-select img{
+ width: 30px;
+}
+
+.form-currency-group .currency-select .currency-dropdown{
+  outline: none;
+  border: none;
+  background: none;
+  color: #000;
+  font-weight: 500;
+  padding: 0 10px 0 5px; 
+}
+
+.form-currency-group .currency-select .currency-dropdown option{
+ color: #000;
+ font-weight: 500; 
+}
+
+.form-currency-group .swap-icon:hover{
+  background: gray;
+}
+
+.converter-form .submit{
+  width: 100%;
+  min-height: 50px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.converter-form .submit:hover{
+  background: gray;
+}
+
+.converter-form .exchange-result{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 25px;
+  border-radius: 7px;
+  background:#000;
+}
